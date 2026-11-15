@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>DungeonGame</title>
+    <script type="module" crossorigin src="./assets/index-GF4ZxCRu.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DJG-UD7X.css">
+  </head>
+  <body>
+    <canvas id="view"></canvas>
+    <div id="vignette"></div>
+    <div id="flash"></div>
+    <div id="nums"></div>
+
+    <!-- interface, built by src/ui/hud.js and scaled from a 1920×1080 design -->
+    <div id="ui">
+      <div id="hud"></div>
+      <div id="windows"></div>
+      <div id="dialog" hidden></div>
+    </div>
+
+    <div id="title">
+      <div class="funken" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <i class="ecke ol" aria-hidden="true"></i><i class="ecke or" aria-hidden="true"></i><i class="ecke ul" aria-hidden="true"></i><i class="ecke ur" aria-hidden="true"></i>
+      <div class="titel-innen">
+        <h1 class="logo" data-text="DungeonGame">DungeonGame</h1>
+        <svg class="zier" viewBox="0 0 640 28" aria-hidden="true">
+          <defs><linearGradient id="zier-l" x1="0" x2="1"><stop offset="0" stop-color="#E2A63A" stop-opacity="0"/><stop offset="1" stop-color="#F6CF72"/></linearGradient><linearGradient id="zier-r" x1="0" x2="1"><stop offset="0" stop-color="#F6CF72"/><stop offset="1" stop-color="#E2A63A" stop-opacity="0"/></linearGradient></defs>
+          <path d="M10 14 H286" stroke="url(#zier-l)" stroke-width="3"/><path d="M354 14 H630" stroke="url(#zier-r)" stroke-width="3"/>
+          <path d="M320 3 L331 14 L320 25 L309 14 Z" fill="#F6CF72" stroke="#120B07" stroke-width="2"/>
+          <path d="M296 9 L301 14 L296 19 L291 14 Z" fill="#E2A63A"/><path d="M344 9 L349 14 L344 19 L339 14 Z" fill="#E2A63A"/>
+        </svg>
+        <p class="untertitel">Sieben Dungeons, vierzehn Bosse und eine Truhe, die nie voll genug ist.</p>
+        <div class="knopf-halo"><button type="button" class="pl messing btn haupt spielen" id="btn-play">Spielen</button></div>
+      </div>
+      <button type="button" class="rechtlich" id="btn-legal">Datenschutz · Impressum · Lizenzen</button>
+      <small class="version">Version 1.44</small>
+    </div>
+    <div id="fade"></div>
+    <div id="loading">
+      <div class="pl pergament zettel"><i class="linie"></i><b>DungeonGame</b><p>Tipp: Rote Flächen auf dem Boden füllen sich, bevor sie zuschlagen. Geh rechtzeitig raus.</p></div>
+      <div class="leiste"><i class="rand"></i><i class="bahn"></i><i class="fuell"></i></div>
+    </div>
+
+  </body>
+</html>
